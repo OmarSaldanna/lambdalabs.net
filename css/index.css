@@ -1,0 +1,61 @@
+body { background-color: black; color: white; }
+
+/* media helpers */
+video { width: 100%;height: auto; pointer-events: none; }
+img { width: 100%;height: auto; }
+
+/* spacing helpers */
+.top-space { margin-top: 5rem; }
+.little-top-space { margin-top: 1rem; }
+.top-space-x2 { margin-top: 7rem; }
+.padding { padding: 2% !important; }
+.padding-sides { padding: 0 2% 0 2% !important; }
+.left-border { border-left: solid 1px  white; }
+.right-border { border-right: solid 1px  white; }
+.bottom-border { border-bottom: solid 1px  white; }
+.row-no-margin { margin: 0px !important; }
+
+/* color helpers */
+.gray { background-color: #1e1e1e !important; }
+.logo { width: auto;height: 100%;cursor: pointer;margin-right: 15px;border-bottom-right-radius: 10px; }
+.black { background-color: black !important; }
+.white-text { color: white !important; }
+.blue-text { color: rgb(0, 139, 195) !important; }
+.pink-text { color: #EA3D4C  !important; }
+.orange-text { color: #F2A73B !important; }
+
+/* text helpers */
+.text { font-size: 20px; }
+.footer-text { font-size: 18px !important; }
+.justify { text-align: justify; }
+.remark { background-color: #ffffff !important; color: #000000; font-weight: bold; }
+.function-icon { font-size: 34px !important; }
+
+/* button helpers */
+.btn-hover { transition: background.7s; }
+.hover-1:hover { background-color: rgb(0, 139, 195) !important;box-shadow: rgb(0, 139, 195) 0px 2px 8px !important; }
+.hover-2:hover { background-color: #EA3D4C  !important;box-shadow: #EA3D4C  0px 2px 8px !important; }
+.hover-3:hover { background-color: #F2A73B !important;box-shadow: #F2A73B 0px 2px 8px !important; }
+.hover-4:hover { background-color: black !important;box-shadow: black 0px 2px 8px !important; }
+.extra-button, .extra-button-function { background-color: black !important; border: solid 1px white !important; color: white !important; transition: color .7, background .7s; }
+.extra-button:hover, .extra-button-function:hover { color: black !important; background-color: white !important; box-shadow: white 0px 2px 8px !important; }
+.mail-button { text-transform: none !important; }
+
+/* larger screens */
+@media only screen and (min-width: 1001px) {
+  nav .brand-logo { left: 80px !important; }
+}
+/* ipads */
+@media only screen and (max-width: 1000px) {
+  nav .brand-logo { left: 12rem !important; }
+  .sidenav-overlay { z-index: 990; }
+}
+/* celulares */
+@media only screen and (max-width: 500px) {
+  .sidenav-overlay { z-index: 990; }
+  .sidenav { width: 170px; }
+  .top-space-on-small { margin-top: 2rem; }
+  .top-space-x2 { margin-top: 2rem; }
+  video { display: none; }
+  .left-border, .right-border { border-left: 0px; border-right: 0px; }
+}
